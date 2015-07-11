@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Fri Jul 10 2015 02:16:33 GMT+0000 (UTC) -->
+<html data-wf-site="5588e8bd52a311f7085f67e3" data-wf-page="5598621f6b6ebb726374590b">
+<head>
+  <meta charset="utf-8">
+  <title>Login/Signup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/officialtrapapp.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Oswald:300,400,700","Droid Sans:400,700","Roboto:300,regular,500"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+</head>
+<body class="lsbody">
+  <div class="backbuttondiv"><a class="backbutton" href="#">BACK</a>
+  </div>
+  <div class="w-section lsformsection">
+    <div class="w-container lsformcontainer">
+      <div class="w-row lsformrow">
+        <div class="w-col w-col-6 lsformcolumn1">
+          <div class="w-form lsloginformwrapper">
+            <form class="lsloginform" id="email-form" name="email-form" data-name="Email Form">
+              <div class="lslogindiv">
+                <h1 class="lslogintext">Login</h1>
+              </div>
+              <label class="lslogintextlabel" for="name">Username:</label>
+              <input class="w-input lstextfield" id="name" type="text" placeholder="Enter your name" name="name" data-name="Name">
+              <label class="lslogintextlabel" for="email">Password:</label>
+              <input class="w-input lstextfield" id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required">
+              <input class="w-button lsloginsubmit" type="submit" value="Login" data-wait="Please wait...">
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6 lsformcolumn2">
+          <div class="w-form lssignupformwrapper">
+            <form class="lssignupformform" id="email-form-2" name="email-form-2" data-name="Email Form 2">
+              <div>
+                <h1 class="lssignuptext">Sign-up</h1>
+              </div>
+              <label class="lssignuptextlabel" for="first_name">First:</label>
+              <input class="w-input lstextfield" id="first_name" type="text" placeholder="Enter your first name" name="first_name" data-name="first_name" required="required">
+              <label class="lssignuptextlabel" for="last_name">Last:</label>
+              <input class="w-input lstextfield" id="last_name" type="email" placeholder="Enter your last name" name="last_name" data-name="last_name" required="required">
+              <label class="lssignuptextlabel" for="username">Username:</label>
+              <input class="w-input lstextfield" id="username" type="email" placeholder="Enter your username" name="username" data-name="username" required="required">
+              <label class="lssignuptextlabel" for="password">Password:</label>
+              <input class="w-input lstextfield" id="password" type="email" placeholder="Enter password" name="password" data-name="password" required="required">
+              <label class="lssignuptextlabel" for="verify_password">Verify Password:</label>
+              <input class="w-input lstextfield" id="verify_password" type="email" placeholder="Re-enter password" name="verify_password" data-name="verify_password" required="required">
+              <label class="lssignuptextlabel" for="email-3">Email Address:</label>
+              <input class="w-input lstextfield" id="email-3" type="email" placeholder="Enter your email address" name="email" data-name="email" required="required">
+              <label class="lssignuptextlabel" for="location">Location:</label>
+              <input class="w-input lstextfield" id="location" type="email" placeholder="Country, State, City" name="location" data-name="location" required="required">
+              <label class="lssignuptextlabel" for="display_name">Display Name:</label>
+              <input class="w-input lstextfield" id="display_name" type="email" placeholder="Enter desired display name" name="display_name" data-name="display_name" required="required">
+              <label class="lssignuptextlabel" for="genre">&nbsp;Genre:</label>
+              <select class="w-select signupgenredropdown" id="genre" name="genre" multiple="multiple" data-name="genre">
+                <option value="">Select one...</option>
+                <option value="rap">Rap</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="r&amp;b">R&amp;B</option>
+                <option value="country">Country</option>
+                <option value="latin">Latin</option>
+                <option value="edm">EDM</option>
+              </select>
+              <input class="w-button lssignupsubmit" type="submit" value="Submit" data-wait="Please wait...">
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
